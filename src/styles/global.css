@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+:root {
+  --color-brand-green: #006A2C;
+  --color-brand-greenc: #56D441;
+  --color-brand-yellow: #e6f000;
+  --color-brand-dark: #1a1a1a;
+  --color-brand-cream: #fbfbf9;
+}

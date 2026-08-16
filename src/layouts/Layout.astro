@@ -1,3 +1,10 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '@fontsource/montserrat';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,17 +14,32 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+		<ClientRouter />
 	</head>
 	<body>
-		<slot />
+		<Header/>
+		<div>
+			
+			<slot /> 
+		</div>
+		<Footer/>
 	</body>
 </html>
 
 <style>
-	html,
+	html{
+		margin: 0;
+		padding: 0;
+	}
+
 	body {
 		margin: 0;
-		width: 100%;
-		height: 100%;
+		padding: 0;
+	}
+		
+
+	body > div {
+		@apply container
 	}
 </style>
