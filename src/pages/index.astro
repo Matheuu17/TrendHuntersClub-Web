@@ -5,63 +5,56 @@ import FacebookIcon from '../icons/Facebook.astro';
 import SocialMedias from '../components/SocialMedias.astro';
 import SocialPill from '../components/SocialPill.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<main class="flex-1 flex items-center justify-center px-4 py-12">
-		<section class="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-		  
-		  <!-- Título Principal -->
-		   <h1 class="flex flex-col items-center font-[family-name:var(--font-display)]">
-				<span class="text-2xl md:text-3xl font-medium text-gray-800 font-sans">
-				Bienvenido a
-				</span>
-				<span class="text-4xl md:text-6xl font-bold tracking-tight text-[#006837] uppercase mt-2">
-				Trend Hunters
-				</span>
-				<span class="text-4xl md:text-6xl font-bold tracking-tight text-[#1a1a1a] uppercase">
-				Club
-				</span>
-			</h1>
-	  
-		  <!-- Descripción -->
-		  <p class="text-lg md:text-xl text-gray-700 max-w-xl font-normal">
-			Somos un espacio donde ideas, datos, creatividad y comunicación trabajan juntas.
-		  </p>
-	  
-		  <!-- Botón CTA -->
-		   <!--cambia el link por el forms lol-->
-		  <a 
-			href="https://www.youtube.com/watch?v=3xotxtnAxiM&t=5s" 
-			class="bg-[#e6f000] text-black font-semibold px-8 py-3 rounded-full hover:brightness-95 transition-all shadow-sm"
-		  >
-			Únete al club
-		  </a>
-	  
-		  <!-- Redes Sociales -->
-		  <SocialMedias>
-			<!--Instagram -->
-			<SocialPill href="https://instagram.com/" ariaLabel="Instagram de Trend Hunters Club">
-				<IGIcon class="size-4 md:size-5" />
-			</SocialPill>
+  <main class="flex-1 flex items-center justify-center px-4 py-6">
+    <section class="max-w-3xl mx-auto text-center flex flex-col items-center gap-6 -translate-y-6">
+      
+      <!-- Título Principal -->
+      <h1 class="flex flex-col items-center font-[family-name:var(--font-display)]">
+        <span class="text-2xl md:text-xl font-medium text-gray-800 font-sans">
+          Bienvenido a
+        </span>
+        <span class="text-4xl md:text-[6rem] font-bold tracking-tight text-[#006837] uppercase mt-2">
+          Trend Hunters
+        </span>
+        <span class="text-4xl md:text-6xl font-bold tracking-tight text-[#1a1a1a] uppercase">
+          Club
+        </span>
+      </h1>
 
-			<!--Twitter -->
-			<SocialPill href="https://x.com/" ariaLabel="Twitter / X de Trend Hunters Club">
-				<XIcon class="size-4 md:size-5" />
-			</SocialPill>
+      <!-- Descripción -->
+      <p class="text-lg md:text-xl text-gray-700 max-w-xl font-normal">
+        Somos un espacio donde ideas, datos, creatividad y comunicación trabajan juntas.
+      </p>
 
-			<!--Facebook -->
-			<SocialPill href="https://facebook.com/" ariaLabel="Facebook de Trend Hunters Club">
-				<FacebookIcon class="size-4 md:size-5" />
-			</SocialPill>
+      <!-- Botón CTA -->
+      <a 
+        href="https://www.youtube.com/watch?v=3xotxtnAxiM&t=5s" 
+        class="bg-[#e6f000] text-black font-semibold px-8 py-3 rounded-full hover:brightness-95 transition-all shadow-sm"
+      >
+        Únete al club
+      </a>
 
-		  </SocialMedias>
-	  
-		</section>
-	  </main>
-	
+      <!-- Redes Sociales -->
+      <SocialMedias>
+        <!-- Instagram -->
+        <SocialPill href="https://instagram.com/" ariaLabel="Instagram de Trend Hunters Club">
+          <IGIcon class="size-4 md:size-10" />
+        </SocialPill>
 
+        <!-- Twitter -->
+        <SocialPill href="https://x.com/" ariaLabel="Twitter / X de Trend Hunters Club">
+          <XIcon class="size-4 md:size-10" />
+        </SocialPill>
+
+        <!-- Facebook -->
+        <SocialPill href="https://facebook.com/" ariaLabel="Facebook de Trend Hunters Club">
+          <FacebookIcon class="size-4 md:size-10" />
+        </SocialPill>
+      </SocialMedias>
+
+    </section>
+  </main>
 </Layout>

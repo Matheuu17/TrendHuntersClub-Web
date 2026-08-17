@@ -1,9 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 609.17 556.39">
+---
+// src/components/Logo.astro
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<svg 
+  id="Capa_2" 
+  data-name="Capa 2" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 609.17 556.39"
+  class={className}
+  fill="currentColor"
+>
   <defs>
     <style>
       .cls-1 {
-        fill: #006A2C;
+        fill: currentColor;
       }
     </style>
   </defs>
