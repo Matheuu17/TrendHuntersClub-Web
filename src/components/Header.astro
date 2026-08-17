@@ -1,16 +1,26 @@
-<header class="flex items-center py-5 w-full text-xs justify-end mx-auto pr-10 border-b border-gray-300">
-    <nav class="text-[var(--color-brand-green)] flex flex-row gap-x-10 text-xl font-bold">
-        <a href="/" class="text-inline-block hover:text-[var(--color-brand-greenc)] hover:scale-110 transition-all duration-200">
-            Inicio 
-        </a>
-        <a href="/nosotros" class="inline-block hover:text-[var(--color-brand-greenc)]  hover:scale-110 transition-all duration-200">
-            Nosotros
-        </a>
-        <a href="/newsletter" class="inline-block hover:text-[var(--color-brand-greenc)]  hover:scale-110 transition-all duration-200">
-            Newsletter
-        </a>
-        <a href="/informes" class="inline-block hover:text-[var(--color-brand-greenc)]  hover:scale-110 transition-all duration-200">
-            Informes
-        </a>
-    </nav>
+---
+import logo from '../assets/logo.svg';
+---
+
+<header class="flex items-center justify-between py-5 px-6 md:px-10 w-full border-b border-gray-300">
+	<a href="/" aria-label="Trend Hunters Club - Inicio">
+		<img src={logo.src} alt="Trend Hunters Club" class="w-12 h-12" />
+	</a>
+
+	<nav class="text-[var(--color-brand-green)] flex flex-row gap-x-6 md:gap-x-10 text-sm md:text-xl font-bold uppercase">
+		<a href="/" class="hover:text-[var(--color-brand-greenc)] hover:scale-110 transition-all duration-200">
+			Inicio
+		</a>
+		<a href="/nosotros" class="hover:text-[var(--color-brand-greenc)] hover:scale-110 transition-all duration-200">
+			Nosotros
+		</a>
+		<a href="/newsletter" class="hover:text-[var(--color-brand-greenc)] hover:scale-110 transition-all duration-200">
+			Newsletter
+		</a>
+		<!--
+		<a href="/informes" class="hover:text-[var(--color-brand-greenc)] hover:scale-110 transition-all duration-200">
+			Informes
+		</a>
+		-->
+	</nav>
 </header>

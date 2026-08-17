@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('newsletter');
+	return posts.map((post) => ({
+		params: { id: post.id },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout>
+	<main class="flex-1 px-4 py-12 max-w-2xl mx-auto">
+		<div class="flex items-center gap-3">
+			<span class="text-xs font-bold text-[var(--color-brand-green)] uppercase">
+				{post.data.type}
+			</span>
+			<span class="text-gray-300">|</span>
+			<time datetime={post.data.date.toISOString()} class="text-xs text-gray-500">
+				{post.data.date.toLocaleDateString('es-PE', { day: 'numeric', month: 'long', year: 'numeric' })}
+			</time>
+		</div>
+		<h1 class="text-3xl font-bold text-[var(--color-brand-dark)] mt-2 mb-6">
+			{post.data.title}
+		</h1>
+		<div class="prose">
+			<Content />
+		</div>
+	</main>
+</Layout>

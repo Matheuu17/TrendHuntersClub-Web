@@ -14,14 +14,13 @@ import Footer from '../components/Footer.astro';
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
 		<ClientRouter />
 	</head>
-	<body>
+	<body class="min-h-screen flex flex-col">
 		<Header/>
-		<div>
-			
-			<slot /> 
+		<div class="flex-1 flex flex-col">
+			<slot />
 		</div>
 		<Footer/>
 	</body>
@@ -37,9 +36,8 @@ import Footer from '../components/Footer.astro';
 		margin: 0;
 		padding: 0;
 	}
-		
 
 	body > div {
-		@apply container
+		@apply container mx-auto
 	}
 </style>

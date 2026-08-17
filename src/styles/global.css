@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: 'Montserrat', sans-serif;
+  --font-display: 'Fredoka', 'Montserrat', sans-serif;
 }
 
 :root {
@@ -9,5 +10,5 @@
   --color-brand-greenc: #56D441;
   --color-brand-yellow: #e6f000;
   --color-brand-dark: #1a1a1a;
-  --color-brand-cream: #fbfbf9;
+  --color-brand-cream: #FAFAF7;
 }
