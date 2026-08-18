@@ -8,50 +8,42 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <main class="flex-1 flex items-center justify-center px-4 py-6">
-    <section class="max-w-3xl mx-auto text-center flex flex-col items-center gap-6 -translate-y-6">
+  <main class="flex-1 flex items-center justify-center px-4 py-8 md:py-12 w-full overflow-x-hidden">
+    <section class="w-full max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
       
       <!-- Título Principal -->
-      <h1 class="flex flex-col items-center font-[family-name:var(--font-display)]">
-        <span class="text-2xl md:text-xl font-medium text-gray-800 font-sans">
+      <h1 class="flex flex-col items-center">
+        <span class="text-xl sm:text-2xl font-medium text-gray-800 font-sans">
           Bienvenido a
         </span>
-        <span class="text-4xl md:text-[6rem] font-bold tracking-tight text-[#006837] uppercase mt-2">
+        <span class="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-[#006837] uppercase mt-1 leading-tight">
           Trend Hunters
         </span>
-        <span class="text-4xl md:text-6xl font-bold tracking-tight text-[#1a1a1a] uppercase">
+        <span class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1a1a1a] uppercase leading-tight">
           Club
         </span>
       </h1>
 
       <!-- Descripción -->
-      <p class="text-lg md:text-xl text-gray-700 max-w-xl font-normal">
+      <p class="text-base sm:text-lg md:text-xl text-gray-700 max-w-xl font-normal leading-relaxed px-2">
         Somos un espacio donde ideas, datos, creatividad y comunicación trabajan juntas.
       </p>
 
-      <!-- Botón CTA -->
-    <!--  <a 
-        href="https://www.youtube.com/watch?v=3xotxtnAxiM&t=5s" 
-        class="bg-[#e6f000] text-black font-semibold px-8 py-3 rounded-full hover:scale-110 hover:brightness-95 transition-all shadow-sm"
-      >
-        Únete al club
-      </a> --> 
-
       <!-- Redes Sociales -->
-      <SocialMedias>
+      <SocialMedias class="flex items-center justify-center gap-4 mt-2">
         <!-- Instagram -->
         <SocialPill href="https://www.instagram.com/trendhunters.club?igsh=ZnUyemRzazdrb2Vz" ariaLabel="Instagram de Trend Hunters Club">
-          <IGIcon class="size-6 md:size-12 text-white bg-[var(--color-brand-green)] border-2 rounded-xl" />
+          <IGIcon class="size-8 md:size-10 text-[var(--color-brand-green,#006837)] hover:scale-110 transition-transform" />
         </SocialPill>
 
-        <!-- Twitter -->
-        <SocialPill href="https://www.tiktok.com/@trendhunters.club?_r=1&_t=ZS-98xs3EsuSSl" ariaLabel="Twitter / X de Trend Hunters Club">
-          <TiktokIcon class="size-6 md:size-10 text-[var(--color-brand-green)]" />
+        <!-- TikTok -->
+        <SocialPill href="https://www.tiktok.com/@trendhunters.club?_r=1&_t=ZS-98xs3EsuSSl" ariaLabel="TikTok de Trend Hunters Club">
+          <TiktokIcon class="size-8 md:size-10 text-[var(--color-brand-green,#006837)] hover:scale-110 transition-transform" />
         </SocialPill>
 
-        <!-- Facebook -->
-        <SocialPill href="https://www.linkedin.com/in/trendhuntersclub?utm_source=share_via&utm_content=profile&utm_medium=member_android" ariaLabel="Facebook de Trend Hunters Club">
-          <FacebookIcon class="size-4 md:size-10" />
+        <!-- LinkedIn / Red -->
+        <SocialPill href="https://www.linkedin.com/in/trendhuntersclub?utm_source=share_via&utm_content=profile&utm_medium=member_android" ariaLabel="LinkedIn de Trend Hunters Club">
+          <FacebookIcon class="size-8 md:size-10 text-[var(--color-brand-green,#006837)] hover:scale-110 transition-transform" />
         </SocialPill>
       </SocialMedias>
 

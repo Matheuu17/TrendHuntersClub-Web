@@ -6,106 +6,116 @@ import CameraIcon from '../icons/Camera.astro';
 import RrhhIcon from '../icons/Rrhh.astro';
 
 const pilares = [
-	{
-		title: 'Misión',
-		text: 'Formar estudiantes capaces de entender personas, mercados y tendencias.',
-		bg: 'bg-[var(--color-brand-green)]',
-		textColor: 'text-white',
-		titleColor: 'text-[var(--color-brand-yellow)]',
-	},
-	{
-		title: 'Propósito',
-		text: 'Reducir la brecha entre la formación académica y la demanda del mercado laboral.',
-		bg: 'bg-[var(--color-brand-yellow)]',
-		textColor: 'text-[var(--color-brand-dark)]',
-		titleColor: 'text-[var(--color-brand-green)]',
-	},
-	{
-		title: 'Visión',
-		text: 'Ser la comunidad referente en análisis de consumidores e innovación en marketing.',
-		bg: 'bg-[var(--color-brand-green)]',
-		textColor: 'text-white',
-		titleColor: 'text-[var(--color-brand-yellow)]',
-	},
+  {
+    title: 'Misión',
+    text: 'Formar estudiantes capaces de entender personas, mercados y tendencias.',
+    bg: 'bg-[var(--color-brand-green,#006837)]',
+    textColor: 'text-white',
+    titleColor: 'text-[var(--color-brand-yellow,#e6f000)]',
+  },
+  {
+    title: 'Propósito',
+    text: 'Reducir la brecha entre la formación académica y la demanda del mercado laboral.',
+    bg: 'bg-[var(--color-brand-yellow,#e6f000)]',
+    textColor: 'text-gray-900',
+    titleColor: 'text-[var(--color-brand-green,#006837)]',
+  },
+  {
+    title: 'Visión',
+    text: 'Ser la comunidad referente en análisis de consumidores e innovación en marketing.',
+    bg: 'bg-[var(--color-brand-green,#006837)]',
+    textColor: 'text-white',
+    titleColor: 'text-[var(--color-brand-yellow,#e6f000)]',
+  },
 ];
 
 const areas = [
-	{
-		title: 'Creatividad',
-		text: 'Campañas y contenido que conectan e inspiran a la afición.',
-		accent: 'text-[var(--color-brand-yellow)]',
-		border: 'border-[var(--color-brand-yellow)]',
-		Icon: PaletteIcon,
-	},
-	{
-		title: 'Investigación e Insights',
-		text: 'Información confiable para decisiones estratégicas del club.',
-		accent: 'text-[var(--color-brand-green)]',
-		border: 'border-[var(--color-brand-green)]',
-		Icon: InsightIcon,
-	},
-	{
-		title: 'Media Audiovisual',
-		text: 'Campañas y contenido que conectan e inspiran a la afición.',
-		accent: 'text-[var(--color-brand-green)]',
-		border: 'border-[var(--color-brand-green)]',
-		Icon: CameraIcon,
-	},
-	{
-		title: 'Recursos Humanos',
-		text: 'Información confiable para decisiones estratégicas del club.',
-		accent: 'text-[var(--color-brand-yellow)]',
-		border: 'border-[var(--color-brand-yellow)]',
-		Icon: RrhhIcon,
-	},
+  {
+    title: 'Creatividad',
+    text: 'Campañas y contenido que conectan e inspiran a la afición.',
+    accent: 'text-[var(--color-brand-yellow,#c4cc00)]',
+    border: 'border-[var(--color-brand-yellow,#e6f000)]',
+    Icon: PaletteIcon,
+  },
+  {
+    title: 'Investigación e Insights',
+    text: 'Información confiable para decisiones estratégicas del club.',
+    accent: 'text-[var(--color-brand-green,#006837)]',
+    border: 'border-[var(--color-brand-green,#006837)]',
+    Icon: InsightIcon,
+  },
+  {
+    title: 'Media Audiovisual',
+    text: 'Producción gráfica y audiovisual enfocada en tendencias e impacto visual.',
+    accent: 'text-[var(--color-brand-green,#006837)]',
+    border: 'border-[var(--color-brand-green,#006837)]',
+    Icon: CameraIcon,
+  },
+  {
+    title: 'Recursos Humanos',
+    text: 'Gestión del talento, cultura interna y desarrollo de los miembros del equipo.',
+    accent: 'text-[var(--color-brand-yellow,#c4cc00)]',
+    border: 'border-[var(--color-brand-yellow,#e6f000)]',
+    Icon: RrhhIcon,
+  },
 ];
 ---
 
 <Layout>
-	<main class="flex-1 px-4 py-12 md:py-16">
-		<section class="max-w-3xl mx-auto text-center flex flex-col items-center gap-4">
-			<h1 class="text-4xl md:text-5xl font-bold uppercase text-[var(--color-brand-green)] font-[family-name:var(--font-display)]">
-				Nosotros
-			</h1>
-			<p class="italic text-gray-700 max-w-2xl">
-				"Creemos que un marketero no se define por la carrera que estudia, sino por su
-				capacidad de comprender a las personas, identificar necesidades, interpretar
-				comportamientos y generar conexiones significativas. Por ello, el marketing no debe
-				entenderse únicamente como publicidad o ventas."
-			</p>
-		</section>
+  <main class="flex-1 w-full px-4 sm:px-6 lg:px-8 py-8 md:py-16 overflow-x-hidden">
+    
+    <!-- Encabezado y Manifiesto -->
+    <section class="max-w-3xl mx-auto text-center flex flex-col items-center gap-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold uppercase text-[var(--color-brand-green,#006837)] tracking-tight">
+        Nosotros
+      </h1>
+      <p class="italic text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl px-2">
+        "Creemos que un marketero no se define por la carrera que estudia, sino por su
+        capacidad de comprender a las personas, identificar necesidades, interpretar
+        comportamientos y generar conexiones significativas. Por ello, el marketing no debe
+        entenderse únicamente como publicidad o ventas."
+      </p>
+    </section>
 
-		<section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-			{pilares.map((pilar) => (
-				<div class={`rounded-2xl p-6 flex flex-col gap-2 ${pilar.bg}`}>
-					<h2 class={`font-bold uppercase text-sm ${pilar.titleColor}`}>
-						{pilar.title}
-					</h2>
-					<p class={`text-sm leading-relaxed ${pilar.textColor}`}>
-						{pilar.text}
-					</p>
-				</div>
-			))}
-		</section>
+    <!-- Pilares (Misión, Propósito, Visión) -->
+    <section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mt-10 md:mt-14">
+      {pilares.map((pilar) => (
+        <div class={`rounded-2xl p-6 flex flex-col gap-2.5 shadow-sm transition-transform hover:-translate-y-1 duration-200 ${pilar.bg}`}>
+          <h2 class={`font-extrabold uppercase text-sm tracking-wide ${pilar.titleColor}`}>
+            {pilar.title}
+          </h2>
+          <p class={`text-sm sm:text-base leading-relaxed ${pilar.textColor}`}>
+            {pilar.text}
+          </p>
+        </div>
+      ))}
+    </section>
 
-		<section class="max-w-5xl mx-auto mt-16">
-			<p class="text-center text-xs tracking-widest text-gray-400 font-bold uppercase mb-6">
-				Nuestras áreas
-			</p>
+    <!-- Áreas del Club -->
+    <section class="max-w-5xl mx-auto mt-14 md:mt-20">
+      <p class="text-center text-xs tracking-widest text-gray-400 font-bold uppercase mb-6 md:mb-8">
+        Nuestras áreas
+      </p>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-				{areas.map((area) => (
-					<div class={`rounded-2xl p-6 flex flex-col gap-2 border-2 bg-white ${area.border}`}>
-						<area.Icon class="size-6" />
-						<h3 class={`font-bold uppercase text-sm ${area.accent}`}>
-							{area.title}
-						</h3>
-						<p class="text-sm text-gray-700 leading-relaxed">
-							{area.text}
-						</p>
-					</div>
-				))}
-			</div>
-		</section>
-	</main>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        {areas.map((area) => (
+          <div class={`rounded-2xl p-6 flex flex-col gap-3 border-2 bg-white shadow-sm transition-all hover:shadow-md ${area.border}`}>
+            <!-- Icono con clase de color dinámico -->
+            <div class={area.accent}>
+              <area.Icon class="size-7 md:size-8" />
+            </div>
+            
+            <h3 class={`font-bold uppercase text-sm sm:text-base tracking-wide ${area.accent}`}>
+              {area.title}
+            </h3>
+            
+            <p class="text-sm text-gray-700 leading-relaxed">
+              {area.text}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </main>
 </Layout>
